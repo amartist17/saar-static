@@ -304,16 +304,50 @@ section.benefits {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    flex-wrap: wrap;
     .card {
-      background-image: linear-gradient(#8baecf85, rgba(255, 255, 0, 0));
+      background-image: linear-gradient(#a9adff, rgba(255, 255, 0, 0));
+      margin: 60px 16px;
+      border-radius: 60px;
+      width: 30%;
+      position: relative;
+
+      padding: 160px 16px 120px;
 
       .image {
         width: 200px;
-        height: 300px;
-        position: relative;
-        bottom: 80px;
+        height: 200px;
+        position: absolute;
+        top: -60px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-position: center;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .heading {
+        font-size: 18px;
+        color: white;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 800;
+        text-align: center;
+      }
+      .text {
+        margin-top: 16px;
+        font-size: 14px;
+        color: white;
+        font-family: "Open Sans", sans-serif;
+        text-align: justify;
       }
     }
+  }
+  .logo-floating-5 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 45%;
+    left: 20px;
+    background-size: cover;
   }
 }
