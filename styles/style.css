@@ -257,11 +257,32 @@ section.benefits {
   width: 100vw;
   min-height: 100vh;
   padding: 6% 14%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: relative;
   background-color: #17478b;
   position: relative;
+}
+section.benefits .section-heading {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: -1px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+section.benefits .card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section.benefits .card-container .card {
+  background-image: linear-gradient(rgba(139, 174, 207, 0.5215686275), rgba(255, 255, 0, 0));
+}
+section.benefits .card-container .card .image {
+  width: 200px;
+  height: 300px;
+  position: relative;
+  bottom: 80px;
 }
 /*# sourceMappingURL=style.css.map */
