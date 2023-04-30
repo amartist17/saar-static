@@ -137,7 +137,7 @@ section.about .article .article-image {
 section.about .article .article-text {
   width: 50%;
   font-size: 20px;
-  color: #2f85a4;
+  color: #17478b;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   line-height: 32px;
@@ -179,10 +179,10 @@ section.timeline .time {
   justify-content: space-between;
   width: 100%;
 }
-section.timeline .time:nth-child(odd) {
+section.timeline .time:nth-child(1) {
   flex-direction: row-reverse;
 }
-section.timeline .time:nth-child(odd) .heading {
+section.timeline .time:nth-child(1) .heading {
   text-align: left;
 }
 section.timeline .time .heading {
@@ -225,6 +225,12 @@ section.timeline .time .arrow-container .arrow {
   width: 500px;
   height: 150px;
   background-size: cover;
+}
+section.timeline .line {
+  width: 2px;
+  height: 70px;
+  background-color: #17478b;
+  opacity: 0.8;
 }
 section.timeline .caption {
   width: 80%;
@@ -318,5 +324,146 @@ section.benefits .logo-floating-5 {
   top: 45%;
   left: 20px;
   background-size: cover;
+}
+
+section.faq {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 6% 14%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  position: relative;
+}
+section.faq .section-heading {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #82bd42;
+  letter-spacing: -1px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+section.faq .item {
+  font-family: "Open Sans", sans-serif;
+  color: #17478b;
+  border-bottom: 2px solid #17478b;
+  font-weight: 800;
+  padding: 2% 2% 3% 2%;
+  position: relative;
+}
+section.faq .item span {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+section.faq .logo-floating-6 {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-size: cover;
+}
+
+section.contact {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 6% 14%;
+  position: relative;
+  background-color: #deebf2;
+  position: relative;
+}
+section.contact .section-heading {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #17478b;
+  letter-spacing: -1px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+section.contact .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+section.contact .container .contact-box {
+  background-color: white;
+  padding: 3% 8%;
+  color: #17478b;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 32px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+section.contact .container .contact-box .logo {
+  width: 270px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-bottom: 20px;
+}
+section.contact .container .contact-box .contact-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 12px 0;
+}
+section.contact .container .contact-box .contact-item i {
+  margin-top: 6px;
+}
+section.contact .container .contact-box .contact-item .data {
+  margin-left: 16px;
+}
+section.contact .container .social {
+  display: flex;
+  flex-direction: column;
+  background-color: #82bd42;
+  color: white;
+  border-radius: 60px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+section.contact .container .social i {
+  margin: 40px 30px;
+  font-size: 24px;
+}
+section.contact .container .map {
+  height: 450px;
+  width: 450px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 32px;
+  background-position: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+section.contact .logo-floating-7 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 20px;
+  right: 30%;
+  background-size: cover;
+}
+
+.footer {
+  height: 10vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 6%;
+}
+.footer .link span {
+  margin: 0 16px;
 }
 /*# sourceMappingURL=style.css.map */
