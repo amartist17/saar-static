@@ -466,4 +466,78 @@ section.contact .logo-floating-7 {
 .footer .link span {
   margin: 0 16px;
 }
+
+@media only screen and (max-width: 1300px) {
+  section.hero {
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 0;
+    padding: 7% 5%;
+  }
+  section.hero .text .sub-text {
+    width: 100% !important;
+  }
+  section.hero .image,
+section.hero .slider-right {
+    display: none;
+  }
+  section.about {
+    padding: 6% 7%;
+  }
+  section.about .article {
+    flex-direction: column;
+  }
+  section.about .article .article-image {
+    margin-bottom: 16px;
+  }
+  section.about .article .article-text {
+    text-align: center;
+  }
+  section.about .reverse {
+    flex-direction: column-reverse;
+  }
+  section.timeline {
+    display: none;
+  }
+  section.benefits .card-container {
+    flex-direction: column;
+  }
+  section.benefits .card-container .card {
+    width: 60%;
+  }
+  section.contact .container {
+    flex-direction: column;
+  }
+  section.contact .container .contact-box {
+    width: 70%;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+  section.contact .container .social {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  section.hero .text {
+    width: 100%;
+  }
+  section.hero .logo {
+    width: 300px !important;
+    height: 150px !important;
+    background-size: contain !important;
+  }
+  section.about .article-text {
+    width: 100% !important;
+  }
+  section.benefits .card-container {
+    flex-direction: column;
+  }
+  section.benefits .card-container .card {
+    width: 90%;
+  }
+  section.contact .container .contact-box {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=style.css.map */

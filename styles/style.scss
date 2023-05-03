@@ -507,3 +507,92 @@ section.contact {
     }
   }
 }
+
+@media only screen and (max-width: 1300px) {
+  section.hero {
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 0;
+    padding: 7% 5%;
+    .text .sub-text {
+      width: 100% !important;
+    }
+    .image,
+    .slider-right {
+      display: none;
+    }
+  }
+  section.about {
+    padding: 6% 7%;
+    .article {
+      flex-direction: column;
+      .article-image {
+        margin-bottom: 16px;
+      }
+      .article-text {
+        text-align: center;
+      }
+    }
+    .reverse {
+      flex-direction: column-reverse;
+    }
+  }
+  section.timeline {
+    display: none;
+  }
+  section.benefits {
+    .card-container {
+      flex-direction: column;
+      .card {
+        width: 60%;
+      }
+    }
+  }
+  section.contact {
+    .container {
+      flex-direction: column;
+      .contact-box {
+        width: 70%;
+        align-items: center;
+        margin-bottom: 32px;
+      }
+      .social {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  section.hero {
+    .text {
+      width: 100%;
+    }
+    .logo {
+      width: 300px !important;
+      height: 150px !important;
+      background-size: contain !important;
+    }
+  }
+  section.about {
+    .article-text {
+      width: 100% !important;
+    }
+  }
+  section.benefits {
+    .card-container {
+      flex-direction: column;
+      .card {
+        width: 90%;
+      }
+    }
+  }
+  section.contact {
+    .container {
+      .contact-box {
+        width: 100%;
+      }
+    }
+  }
+}
