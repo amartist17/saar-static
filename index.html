@@ -242,10 +242,76 @@
     </section>
     <section class="faq">
       <h1 class="section-heading">FAQ</h1>
+      <div class="faq-container">
+        <div class="faq">
+          <h3 class="faq-title">Lorem ipsum dolor sit amet.</h3>
+          <p class="faq-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+            nobis, repellat neque non dicta fugiat veritatis sit delectus
+            perspiciatis quis?
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-angle-down"></i>
+          </button>
+        </div>
 
-      <div class="item">
+        <div class="faq active">
+          <h3 class="faq-title">Lorem ipsum dolor sit amet.</h3>
+          <p class="faq-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+            nobis, repellat neque non dicta fugiat veritatis sit delectus
+            perspiciatis quis?
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-angle-down"></i>
+          </button>
+        </div>
+
+        <div class="faq">
+          <h3 class="faq-title">Lorem ipsum dolor sit amet.</h3>
+          <p class="faq-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+            nobis, repellat neque non dicta fugiat veritatis sit delectus
+            perspiciatis quis?
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-angle-down"></i>
+          </button>
+        </div>
+
+        <div class="faq">
+          <h3 class="faq-title">Lorem ipsum dolor sit amet.</h3>
+          <p class="faq-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+            nobis, repellat neque non dicta fugiat veritatis sit delectus
+            perspiciatis quis?
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-angle-down"></i>
+          </button>
+        </div>
+
+        <div class="faq">
+          <h3 class="faq-title">Lorem ipsum dolor sit amet.</h3>
+          <p class="faq-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+            nobis, repellat neque non dicta fugiat veritatis sit delectus
+            perspiciatis quis?
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-angle-down"></i>
+          </button>
+        </div>
+      </div>
+      <!-- <div class="item">
         Lorem, ipsum dolor Lorem, ipsum...
         <span><i class="fa-solid fa-chevron-down"></i></span>
+        <div class="ans">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore,
+          odio! Minus hic reiciendis dignissimos tenetur cum aliquid rerum
+          atque! Fuga quasi exercitationem recusandae sequi ducimus consequuntur
+          cupiditate incidunt sed minima!
+        </div>
       </div>
       <div class="item">
         Lorem, ipsum dolor Lorem, ipsum...
@@ -266,7 +332,7 @@
       <div class="item">
         Lorem, ipsum dolor Lorem, ipsum...
         <span><i class="fa-solid fa-chevron-down"></i></span>
-      </div>
+      </div> -->
       <div
         class="logo-floating-6"
         style="background-image: url('./images/07.png')"
@@ -328,5 +394,14 @@
         <span>Lorem</span>
       </div>
     </section>
+    <script>
+      const buttons = document.querySelectorAll(".faq-toggle");
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () =>
+          button.parentElement.classList.toggle("active")
+        );
+      });
+    </script>
   </body>
 </html>
